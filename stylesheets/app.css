@@ -9084,53 +9084,49 @@ ul {
   height: 830px;
 }
 
-/* line 82, ../scss/_custom.scss */
-#second {
-  background-color: rgba(196, 172, 48, 0.9);
-}
-
-/* line 87, ../scss/_custom.scss */
+/* line 84, ../scss/_custom.scss */
 .intro {
   margin-top: 5%;
   float: left;
   background-color: #f7f7ec;
+  opacity: 0.9;
   padding: 5%;
   box-shadow: 16px -22px 300px 0px #1e8c93;
 }
 @media screen and (max-width: 1024px) {
-  /* line 87, ../scss/_custom.scss */
+  /* line 84, ../scss/_custom.scss */
   .intro {
     padding: 10%;
   }
 }
-/* line 98, ../scss/_custom.scss */
+/* line 96, ../scss/_custom.scss */
 .intro img {
   width: 20%;
   margin-left: 40%;
   margin-bottom: 10px;
 }
 @media screen and (max-width: 480px) {
-  /* line 98, ../scss/_custom.scss */
+  /* line 96, ../scss/_custom.scss */
   .intro img {
     width: 30%;
     margin-left: 35%;
   }
 }
-/* line 107, ../scss/_custom.scss */
+/* line 105, ../scss/_custom.scss */
 .intro h1 {
   font-family: "rooney-web";
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 5px;
   text-align: center;
   color: #4B3E4D;
 }
 @media screen and (max-width: 480px) {
-  /* line 107, ../scss/_custom.scss */
+  /* line 105, ../scss/_custom.scss */
   .intro h1 {
     font-size: 1.5rem;
   }
 }
-/* line 117, ../scss/_custom.scss */
+/* line 115, ../scss/_custom.scss */
 .intro p {
   color: #4B3E4D;
   font-family: "rooney-sans";
@@ -9139,12 +9135,12 @@ ul {
   margin-bottom: 0px;
 }
 @media screen and (max-width: 480px) {
-  /* line 117, ../scss/_custom.scss */
+  /* line 115, ../scss/_custom.scss */
   .intro p {
     font-size: 1rem;
   }
 }
-/* line 127, ../scss/_custom.scss */
+/* line 125, ../scss/_custom.scss */
 .intro p.sub {
   font-size: 1rem;
   font-style: italic;
@@ -9154,13 +9150,13 @@ ul {
   line-height: 80%;
 }
 @media screen and (max-width: 480px) {
-  /* line 127, ../scss/_custom.scss */
+  /* line 125, ../scss/_custom.scss */
   .intro p.sub {
     font-size: 0.75rem;
     font-weight: bold;
   }
 }
-/* line 139, ../scss/_custom.scss */
+/* line 137, ../scss/_custom.scss */
 .intro .story {
   color: #4B3E4D;
   float: left;
@@ -9169,7 +9165,7 @@ ul {
   font-style: italic;
   margin-top: 30px;
 }
-/* line 147, ../scss/_custom.scss */
+/* line 145, ../scss/_custom.scss */
 .intro .divider {
   height: 3px;
   background-color: #C4AC30;
@@ -9178,7 +9174,7 @@ ul {
   float: left;
   margin-left: 45%;
 }
-/* line 155, ../scss/_custom.scss */
+/* line 153, ../scss/_custom.scss */
 .intro ul {
   float: left;
   margin-top: 30px;
@@ -9186,31 +9182,87 @@ ul {
   width: 50%;
 }
 @media screen and (max-width: 1024px) {
-  /* line 155, ../scss/_custom.scss */
+  /* line 153, ../scss/_custom.scss */
   .intro ul {
     margin-left: 25%;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 155, ../scss/_custom.scss */
+  /* line 153, ../scss/_custom.scss */
   .intro ul {
     width: 100%;
     margin-left: 0%;
   }
 }
-/* line 170, ../scss/_custom.scss */
+/* line 168, ../scss/_custom.scss */
 .intro li {
   float: left;
   width: 15%;
   margin-left: 10%;
 }
 @media screen and (max-width: 1024px) {
-  /* line 170, ../scss/_custom.scss */
+  /* line 168, ../scss/_custom.scss */
   .intro li {
     width: 10%;
   }
 }
-/* line 177, ../scss/_custom.scss */
+/* line 175, ../scss/_custom.scss */
 .intro li img {
   width: 100%;
+}
+
+/* line 186, ../scss/_custom.scss */
+h2 {
+  margin-top: 50px;
+  font-family: "rooney-web";
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
+  color: #4B3E4D;
+}
+@media screen and (max-width: 480px) {
+  /* line 186, ../scss/_custom.scss */
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* line 200, ../scss/_custom.scss */
+.divider {
+  height: 3px;
+  background-color: #D74F33;
+  width: 10%;
+  margin-top: 0px;
+  float: left;
+  margin-left: 45%;
+}
+
+/* line 211, ../scss/_custom.scss */
+#second {
+  background-color: #dfcf7b;
+  opacity: 0.9;
+}
+/* line 214, ../scss/_custom.scss */
+#second ul {
+  margin-top: 60px;
+  float: left;
+  color: #156469;
+  font-family: "rooney-sans";
+}
+/* line 220, ../scss/_custom.scss */
+#second li {
+  margin-bottom: 15px;
+  float: left;
+  padding: 3px 10px 5px 10px;
+  border: solid 2px #156469;
+  border-radius: 10px;
+  font-size: 1.125rem;
+  margin-right: 10px;
+}
+@media screen and (max-width: 480px) {
+  /* line 220, ../scss/_custom.scss */
+  #second li {
+    padding: 1px 10px 4px 10px;
+    font-size: 1rem;
+  }
 }
