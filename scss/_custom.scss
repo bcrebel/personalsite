@@ -44,7 +44,7 @@ list-style: none;
   overflow-x: hidden;
   overflow-y: auto;
   background-image: url('img/4571462.png');
-  background-size: 60%;
+  background-size: 80%;
   	@media screen and (max-width: $phones) {
   	background-size: 100%;
   	}
@@ -85,18 +85,11 @@ background-color: transparentize($yellow, 0.1);
 
 
 .intro {
-background:
-linear-gradient(135deg, transparent 10px, #f7f7ec 0) top left,
-linear-gradient(225deg, transparent 10px, #f7f7ec 0) top right,
-linear-gradient(315deg, transparent 10px, #f7f7ec 0) bottom right,
-linear-gradient(45deg,  transparent 10px, #f7f7ec 0) bottom left;
-background-size: 90%;
-background-repeat: no-repeat;
 margin-top: 5%;
 float: left;
-//background-color: lighten($tan, 20%);
+background-color: lighten($tan, 20%);
 padding: 5%;
-//box-shadow: 16px -22px 300px 0px rgba(30,140,147,1);
+box-shadow: 16px -22px 300px 0px rgba(30,140,147,1);
 	@media screen and (max-width: $tablets) {
 	//margin-top: 25%;
 	padding: 10%;

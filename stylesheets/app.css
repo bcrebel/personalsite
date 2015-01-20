@@ -9052,7 +9052,7 @@ ul {
   overflow-x: hidden;
   overflow-y: auto;
   background-image: url("img/4571462.png");
-  background-size: 60%;
+  background-size: 80%;
 }
 @media screen and (max-width: 480px) {
   /* line 41, ../scss/_custom.scss */
@@ -9091,12 +9091,11 @@ ul {
 
 /* line 87, ../scss/_custom.scss */
 .intro {
-  background: linear-gradient(135deg, transparent 10px, #f7f7ec 0) top left, linear-gradient(225deg, transparent 10px, #f7f7ec 0) top right, linear-gradient(315deg, transparent 10px, #f7f7ec 0) bottom right, linear-gradient(45deg, transparent 10px, #f7f7ec 0) bottom left;
-  background-size: 90%;
-  background-repeat: no-repeat;
   margin-top: 5%;
   float: left;
+  background-color: #f7f7ec;
   padding: 5%;
+  box-shadow: 16px -22px 300px 0px #1e8c93;
 }
 @media screen and (max-width: 1024px) {
   /* line 87, ../scss/_custom.scss */
@@ -9104,20 +9103,20 @@ ul {
     padding: 10%;
   }
 }
-/* line 105, ../scss/_custom.scss */
+/* line 98, ../scss/_custom.scss */
 .intro img {
   width: 20%;
   margin-left: 40%;
   margin-bottom: 10px;
 }
 @media screen and (max-width: 480px) {
-  /* line 105, ../scss/_custom.scss */
+  /* line 98, ../scss/_custom.scss */
   .intro img {
     width: 30%;
     margin-left: 35%;
   }
 }
-/* line 114, ../scss/_custom.scss */
+/* line 107, ../scss/_custom.scss */
 .intro h1 {
   font-family: "rooney-web";
   text-transform: uppercase;
@@ -9126,12 +9125,12 @@ ul {
   color: #4B3E4D;
 }
 @media screen and (max-width: 480px) {
-  /* line 114, ../scss/_custom.scss */
+  /* line 107, ../scss/_custom.scss */
   .intro h1 {
     font-size: 1.5rem;
   }
 }
-/* line 124, ../scss/_custom.scss */
+/* line 117, ../scss/_custom.scss */
 .intro p {
   color: #4B3E4D;
   font-family: "rooney-sans";
@@ -9140,12 +9139,12 @@ ul {
   margin-bottom: 0px;
 }
 @media screen and (max-width: 480px) {
-  /* line 124, ../scss/_custom.scss */
+  /* line 117, ../scss/_custom.scss */
   .intro p {
     font-size: 1rem;
   }
 }
-/* line 134, ../scss/_custom.scss */
+/* line 127, ../scss/_custom.scss */
 .intro p.sub {
   font-size: 1rem;
   font-style: italic;
@@ -9155,13 +9154,13 @@ ul {
   line-height: 80%;
 }
 @media screen and (max-width: 480px) {
-  /* line 134, ../scss/_custom.scss */
+  /* line 127, ../scss/_custom.scss */
   .intro p.sub {
     font-size: 0.75rem;
     font-weight: bold;
   }
 }
-/* line 146, ../scss/_custom.scss */
+/* line 139, ../scss/_custom.scss */
 .intro .story {
   color: #4B3E4D;
   float: left;
@@ -9170,7 +9169,7 @@ ul {
   font-style: italic;
   margin-top: 30px;
 }
-/* line 154, ../scss/_custom.scss */
+/* line 147, ../scss/_custom.scss */
 .intro .divider {
   height: 3px;
   background-color: #C4AC30;
@@ -9179,7 +9178,7 @@ ul {
   float: left;
   margin-left: 45%;
 }
-/* line 162, ../scss/_custom.scss */
+/* line 155, ../scss/_custom.scss */
 .intro ul {
   float: left;
   margin-top: 30px;
@@ -9187,31 +9186,31 @@ ul {
   width: 50%;
 }
 @media screen and (max-width: 1024px) {
-  /* line 162, ../scss/_custom.scss */
+  /* line 155, ../scss/_custom.scss */
   .intro ul {
     margin-left: 25%;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 162, ../scss/_custom.scss */
+  /* line 155, ../scss/_custom.scss */
   .intro ul {
     width: 100%;
     margin-left: 0%;
   }
 }
-/* line 177, ../scss/_custom.scss */
+/* line 170, ../scss/_custom.scss */
 .intro li {
   float: left;
   width: 15%;
   margin-left: 10%;
 }
 @media screen and (max-width: 1024px) {
-  /* line 177, ../scss/_custom.scss */
+  /* line 170, ../scss/_custom.scss */
   .intro li {
     width: 10%;
   }
 }
-/* line 184, ../scss/_custom.scss */
+/* line 177, ../scss/_custom.scss */
 .intro li img {
   width: 100%;
 }
