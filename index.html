@@ -4,10 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carron White</title>
-    <link rel="stylesheet" href="stylesheets/app.css" />
+    <script src="bower_components/modernizr/modernizr.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/app.css" />
     <script src="//use.typekit.net/rio0awc.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
-    <script src="bower_components/modernizr/modernizr.js"></script>
 
 
   </head>
@@ -60,6 +61,12 @@
           </div>
         </div>
       </div>
+
+
+
+
+
+
       <div class="parallax_group">
         <div class="parallax_layer parallax_layer-back">
         </div>
@@ -71,10 +78,9 @@
               <div class="divider">
               </div>
             </div>
-          </div>
-          <div class="row">
+           <div class="row">
             <div class="small-10 small-centered columns">
-              <ul>
+              <ul class="tags">
                 <li>html
                 </li>
                 <li>css
@@ -105,10 +111,12 @@
                 </li>
                 <li>foundation
                 </li>
+                <li>starting something
+                </li>
               </ul>
             </div>
           </div>
-          <div class="row">
+           <div class="row">
             <div class="small-12 columns">
               <h2>Work
               </h2>
@@ -117,12 +125,46 @@
             </div>
           </div>
         </div>
+
+
+
+        </div>
+
+        
       </div>
-    </div>    
+
+           <!--*******************Work Snapshots****************-->
+
+           <div class="work-section">
+            <ul >
+              <li data-equalizer-watch>
+                <img src="stylesheets/img/elxr-browser-large.png">
+              </li>
+              <li data-equalizer-watch>
+                <img src="stylesheets/img/pt-iphone.png">
+              </li>
+              <li data-equalizer-watch>
+                 <img src="stylesheets/img/remit-browser.png">
+              </li>
+              <li data-equalizer-watch>
+                <img src="stylesheets/img/sahshe-thumb.png">
+              </li>
+            </ul>
+          </div>
+
+ </div>
+
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
-
+    <script>
+      $(document).foundation({
+        equalizer : {
+        // Specify if Equalizer should make elements equal height once they become stacked.
+        equalize_on_stack: false
+        }
+      });
+    </script>
   </body>
 </html>
