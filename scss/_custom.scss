@@ -6,19 +6,35 @@ list-style: none;
 padding: 0px;
 }
 
+body {
 
+background-color: transparentize($blue, 0.3);
+height: 100%;
+font-smoothing: antialiased;
 
-.parallax {
+}
+
+.bg-fluid {
+background-image: url('img/4571462.png');
+background-size: 30%;
+background-attachment: fixed;
+	@media screen and (max-width: $tablets) {
+	background-size: 80%;
+	}
+	
+}
+
+/*.parallax {
 perspective: 1px;
 height: 100%;
 overflow-x: hidden;
 overflow-y: auto;
 background-image: url('img/4571462.png');
-background-size: 80%;
+background-size: 30%;
  	@media screen and (max-width: $phones) {
   	background-size: 100%;
   	}
-}
+}*/
 
 
 
@@ -62,9 +78,11 @@ height: 830px;
 margin-top: 5%;
 float: left;
 background-color: lighten($tan, 20%);
-opacity: 0.9;
+opacity: 0.85;
+border: solid 3px $yellow;
 padding: 5%;
-box-shadow: 16px -22px 300px 0px rgba(30,140,147,1);
+//box-shadow: 16px -22px 300px 0px rgba(30,140,147,1);
+margin-bottom: 50px;
 	@media screen and (max-width: $tablets) {
 	padding: 10%;
 	}
@@ -186,44 +204,53 @@ margin-left: 45%;
 
 
 
-#second {
-//z-index: -1;
-background-color: lighten($yellow, 20%);
-opacity: 0.9;
-	ul.tags {
-	margin-top: 60px;
+
+ul.tags {
+margin-top: 60px;
+float: left;
+color: darken($blue, 10%);
+font-family: $roons;
+	li {
+	margin-bottom: 15px;
 	float: left;
-	color: darken($blue, 10%);
-	font-family: $roons;
-		li {
-		margin-bottom: 15px;
-		float: left;
-		padding: 3px 10px 5px 10px;
-		border: solid 2px darken($blue, 10%);
-		border-radius: 15px;
-		font-size: rem-calc(18px);
-		margin-right: 10px;
-			@media screen and (max-width: $phones) {
-			padding: 1px 10px 4px 10px;
-			font-size: 1rem;
-			}
+	padding: 3px 10px 5px 10px;
+	border: solid 2px darken($blue, 10%);
+	border-radius: 15px;
+	font-size: rem-calc(18px);
+	margin-right: 10px;
+		@media screen and (max-width: $phones) {
+		padding: 1px 10px 4px 10px;
+		font-size: 1rem;
 		}
 	}
 }
 
 
 
+.skills {
+background-image: url('img/pattern-yellow.png');
+background-attachment: fixed;
+background-size: 30%;
+height: auto;
+padding-bottom: 10%;
+zoom: 1;
+	@media screen and (max-width: $tablets) {
+	background-size: 80%;
+	}
+}
+
+
+
+
+
 .work-section {
-clear: both;
 width: 100%;
 z-index: 100;
-margin-top: -20%;
-position: absolute;
+margin-top: 50px;
+//position: absolute;
 	@media screen and (max-width: $tablets) {
-	margin-top: -30%;
 	}
 	@media screen and (max-width: $phones) {
-	margin-top: -50%;
 	}
 	ul {
 	float: left;
@@ -231,37 +258,119 @@ position: absolute;
 
 		li {
 		width: 25%;
-		height: 300px;
+		//height: 300px;
 		float: left;
-		padding: 10% 0% 5% 0%;
-
+		padding: 6% 0% 5% 0%;
+		-webkit-transition: all 0.25 ease-in-out;
+  		-moz-transition: all 0.25 ease-in-out;
+  		-ms-transition: all 0.25 ease-in-out;
+  		-o-transition: all 0.25 ease-in-out;
+  		transition:  ease-in-out;
 			@media screen and (max-width : 1024px) {
 			width: 50%;
 			}
 			@media screen and (max-width: $phones) {
 			width: 100%;
+			padding-top: 14%;
 			}
 			&:nth-child(1) {
-			background-color: $tan;
+			background-color: lighten($blue, 25%);
+				&:hover h3 {
+				display: block;
+				}
 			}
 			&:nth-child(2) {
-			background-color: lighten($tan, 5%);
+			background-color: lighten($blue, 35%);
+				&:hover h3 {
+				display: block;
+				}
 			}
 			&:nth-child(3) {
-			background-color: lighten($tan, 10%);
+			background-color: lighten($blue, 45%);
+				&:hover h3 {
+				display: block;
+				}
 			}
 			&:nth-child(4) {
-			background-color: lighten($tan, 15%);
-			padding-top: 8%;
+			background-color: lighten($blue, 55%);
+				&:hover h3 {
+				display: block;
+				}
+				@media screen and (max-width: $phones) {
+				padding-top: 8%;
+				}
 				img {
 				width: 40%;
-				margin-left: 30%;
+				margin-left: 31%;
 				}
 			}
 			img {
 			width: 60%;
 			margin-left: 20%;
+			//margin-top: 25%;
 			}
+		}
+	}
+}
+
+
+
+.work-section li:hover img {
+-webkit-transition: all 0.25s ease-in-out;
+-moz-transition: all 0.25s ease-in-out;
+-ms-transition: all 0.25s ease-in-out;
+-o-transition: all 0.25s ease-in-out;
+transition: all 0.25s ease-in-out;
+opacity: .3;
+margin-top: 25px;
+}
+
+
+
+.work-section li:hover {
+text-decoration: none;
+-webkit-transition: all 0.25s ease-in-out;
+-moz-transition: all 0.25s ease-in-out;
+-ms-transition: all 0.25s ease-in-out;
+-o-transition: all 0.25s ease-in-out;
+transition: all 0.25s ease-in-out;
+}
+
+
+h3 {
+z-index: 10;
+text-align: center;
+font-family: $roons;
+color: $purple;
+width: 50%;
+margin-top: -4%;
+margin-left: -12.5%;
+position: absolute;
+font-size: rem-calc(28px);
+text-transform: uppercase;
+display: none;
+letter-spacing: 2px;
+	@media screen and (max-width: $tablets) {
+	margin-left: 1%;
+	}
+	@media screen and (max-width: $phones) {
+	margin-left: 25%;
+	}
+}
+
+
+
+footer {
+font-family: $roon;
+text-transform: uppercase;
+letter-spacing: 5px;
+padding-bottom: 15px;
+	p {
+	text-align: center;
+	color: $tan;
+	font-size: rem-calc(18px);
+		@media screen and (max-width: $phones) {
+		font-size: rem-calc(14px);
 		}
 	}
 }

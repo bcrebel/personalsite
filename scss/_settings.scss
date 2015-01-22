@@ -1,6 +1,17 @@
 
 //Fonts
 
+@font-face {
+  font-family: 'heart_icons';
+  src: url('../font/heart_icons.eot?11871579');
+  src: url('../font/heart_icons.eot?11871579#iefix') format('embedded-opentype'),
+       url('../font/heart_icons.woff?11871579') format('woff'),
+       url('../font/heart_icons.ttf?11871579') format('truetype'),
+       url('../font/heart_icons.svg?11871579#heart_icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 $roon : "rooney-web";
 
 $roons: "rooney-sans";
