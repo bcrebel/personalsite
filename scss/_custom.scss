@@ -1,4 +1,6 @@
-
+#portfolio {
+	width: 100%;
+}
 
 
 ul {
@@ -15,10 +17,10 @@ font-smoothing: antialiased;
 }
 
 .bg-fluid {
-background-image: url("img/pop_back_1.png");
+background-image: url("img/pop_back_9.png");
 background-attachment: fixed;
-background-repeat: repeat-x;
-background-size: 13%;
+background-repeat: repeat;
+background-size: 15%;
 background-color: $tan;
 	@media screen and (max-width: $tablets) {
 	background-size: 80%;
@@ -87,7 +89,7 @@ margin-bottom: 50px;
 	text-transform: uppercase;
 	letter-spacing: 10px;
 	text-align: center;
-	font-weight: normal;
+	//font-weight: normal;
 	color: $purple;
 		@media screen and (max-width: $tablets) {
 		font-size: 1.6rem;
@@ -170,7 +172,7 @@ margin-top: 50px;
 font-family: $roon;
 text-transform: uppercase;
 letter-spacing: 5px;
-font-weight: normal;
+//font-weight: normal;
 text-align: center;
 color: $purple;
 	@media screen and (max-width: $phones) {
@@ -215,10 +217,10 @@ font-family: $roons;
 
 
 .skills {
-background-image: url("img/pop_back_2.png");
+background-image: url("img/pop_back_10.png");
 background-attachment: fixed;
-background-repeat: repeat-x;
-background-size: 13%;
+background-repeat: repeat;
+background-size: 15%;
 background-color: $blue;
 height: auto;
 padding-bottom: 10%;
@@ -329,11 +331,12 @@ text-align: center;
 font-family: $roons;
 color: $purple;
 width: 50%;
-font-weight: normal;
+font-size: 1.125rem;
+//font-weight: normal;
 margin-top: -4%;
 margin-left: -12.5%;
 position: absolute;
-font-size: rem-calc(28px);
+//font-size: rem-calc(28px);
 text-transform: uppercase;
 display: none;
 letter-spacing: 2px;

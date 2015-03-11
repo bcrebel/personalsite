@@ -47,8 +47,7 @@
 
             </div>
               
-              <!--<div class="divider">
-              </div>-->
+  
               
               <div class="small-12 large-6 small-centered columns">
               
@@ -183,22 +182,19 @@
 
 
 
-
            <!--*******************Work Snapshots****************-->
 
-          <div class="views">
-
-           <div class="view views-nav work-section">
+          <div id= "portfolio" class="work-section">
 
             <ul data-equalizer>
 
-              <li data-equalizer-watch data-pushview>
+              <li data-equalizer-watch>
 
-                <a href="#elxr" data-pushview>
-
+                <a href="#elxr">
+                  <span>
                   <h3>Elxr
                   </h3>
-
+                </span>
                   <img src="stylesheets/img/elxr-browser-large.png">
 
                 </a>
@@ -246,51 +242,9 @@
 
             </ul>
           
-          </div>
+          </div>       
 
-
-          <div class="views-main">
- 
-          <div class="view" id="#elxr">
-
-            <div class="row">
-
-              <div class="small-12 columns">
-            
-                <h2>Elxr</h2>
-
-              </div>
-
-            </div>
-          
-          </div>
-        
- 
-
- 
-          <div class="view" id="#prettytendr">
-            
-            <h2>Prettytendr</h2>
-          
-          </div>
-
-          <div class="view" id="#remitmas">
-
-            <h2>RemitM&aacute;s</h2>
-
-          </div>
-
-          <div class="view" id="#sahshe">
-
-            <h2>SAHSH&Eacute;</h2>
-
-          </div>
-        
-          </div>
-
-      </div>
-
-  </div>
+        </div>
 
 
 
@@ -320,29 +274,7 @@
     <script src="js/app.js"></script>
 
 
-    <script>
-      $(document).foundation({
-        equalizer : {
-        // Specify if Equalizer should make elements equal height once they become stacked.
-        equalize_on_stack: true
-        }
-      });
-    </script>
-
-        <script>
-       
-      $('.views').simpleSlideView({views: '.view', dataAttr: {
-      push: 'pushview',
-      pop: 'popview'
-    },
-
-     dataAttrEvent: 'click',  classNames: {
-      container: 'SimpleSlideView-container',
-      view: 'SimpleSlideView-view',
-      activeView: 'SimpleSlideView-view-active'
-    }
-  });
-    </script>
+    
     
   </body>
 </html>
