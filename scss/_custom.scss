@@ -19,11 +19,12 @@ font-smoothing: antialiased;
 .bg-fluid {
 background-image: url("img/pop_back_9.png");
 background-attachment: fixed;
-background-repeat: repeat;
-background-size: 15%;
+background-repeat: repeat-x;
+background-size: 10%;
 background-color: $tan;
+background-position: 0% 15%;
 	@media screen and (max-width: $tablets) {
-	background-size: 80%;
+	background-size: 10%;
 	}
 	
 }
@@ -109,7 +110,7 @@ margin-bottom: 50px;
 		}
 	}
 	p.sub {
-	font-size: rem-calc(16px);
+	font-size: rem-calc(18px);
 	font-style: italic;
 	font-family: $roon;
 	color: $purple;
@@ -219,14 +220,15 @@ font-family: $roons;
 .skills {
 background-image: url("img/pop_back_10.png");
 background-attachment: fixed;
-background-repeat: repeat;
-background-size: 15%;
+background-repeat: repeat-x;
+background-size: 10%;
 background-color: $blue;
+background-position: 0% 15%;
 height: auto;
 padding-bottom: 10%;
 zoom: 1;
 	@media screen and (max-width: $tablets) {
-	background-size: 80%;
+	background-size: 10%;
 	}
 }
 
@@ -262,25 +264,40 @@ margin-top: 50px;
 			padding-top: 14%;
 			}
 			&:nth-child(1) {
-			background-color: lighten($blue, 5%);
+			background-color: lighten($blue, 20%);
+				@media screen and (max-width: $tablets) {
+					background-color: lighten($blue, 15%);
+				}
+				@media screen and (max-width: $phones) {
+					background-color: lighten($blue, 20%);
+				}
 				&:hover h3 {
 				display: block;
 				}
 			}
 			&:nth-child(2) {
-			background-color: lighten($blue, 10%);
+			background-color: lighten($blue, 15%);
+				@media screen and (max-width: $tablets) {
+					background-color: lighten($blue, 20%);
+				}
+				@media screen and (max-width: $phones) {
+					background-color: lighten($blue, 15%);
+				}
 				&:hover h3 {
 				display: block;
 				}
 			}
 			&:nth-child(3) {
-			background-color: lighten($blue, 15%);
+			background-color: lighten($blue, 20%);
+				@media screen and (max-width: $tablets) {
+					background-color: lighten($blue, 20%);
+				}
 				&:hover h3 {
 				display: block;
 				}
 			}
 			&:nth-child(4) {
-			background-color: lighten($blue, 20%);
+			background-color: lighten($blue, 15%);
 				&:hover h3 {
 				display: block;
 				}
@@ -351,6 +368,7 @@ letter-spacing: 2px;
 
 
 footer {
+background-color: $tan;
 font-family: $roon;
 text-transform: uppercase;
 letter-spacing: 5px;
