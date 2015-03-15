@@ -3171,48 +3171,48 @@ th.hide-for-touch {
     clear: both;
   }
 }
-/* line 1, ../scss/_custom.scss */
+/* line 3, ../scss/_custom.scss */
 #portfolio {
   width: 100%;
 }
 
-/* line 6, ../scss/_custom.scss */
+/* line 8, ../scss/_custom.scss */
 ul {
   list-style: none;
   padding: 0px;
 }
 
-/* line 11, ../scss/_custom.scss */
+/* line 13, ../scss/_custom.scss */
 body {
-  background-color: rgba(166, 188, 191, 0.7);
+  background-color: #f0f4f4;
   height: 100%;
   font-smoothing: antialiased;
 }
 
-/* line 19, ../scss/_custom.scss */
+/* line 21, ../scss/_custom.scss */
 .bg-fluid {
-  background-image: url("img/pop_back_9.png");
+  background-image: url("img/pop_back_9_ext.png");
   background-attachment: fixed;
   background-repeat: repeat-x;
   background-size: 10%;
   background-color: #FCF3CF;
-  background-position: 0% 15%;
 }
 @media screen and (max-width: 1024px) {
-  /* line 19, ../scss/_custom.scss */
+  /* line 21, ../scss/_custom.scss */
   .bg-fluid {
+    background-position: 0% 5%;
     background-size: 10%;
   }
 }
 
-/* line 35, ../scss/_custom.scss */
+/* line 38, ../scss/_custom.scss */
 .parallax_group {
   position: relative;
   height: 830px;
   transform-style: preserve-3d;
 }
 
-/* line 45, ../scss/_custom.scss */
+/* line 48, ../scss/_custom.scss */
 .parallax_layer {
   position: absolute;
   top: 0;
@@ -3221,14 +3221,14 @@ body {
   left: 0;
 }
 
-/* line 55, ../scss/_custom.scss */
+/* line 58, ../scss/_custom.scss */
 .parallax_layer-base {
   transform: translateZ(0);
   background-color: rgba(166, 188, 191, 0.7);
   height: 830px;
 }
 
-/* line 66, ../scss/_custom.scss */
+/* line 69, ../scss/_custom.scss */
 .intro {
   margin-top: 5%;
   float: left;
@@ -3236,46 +3236,31 @@ body {
   margin-bottom: 50px;
 }
 @media screen and (max-width: 1024px) {
-  /* line 66, ../scss/_custom.scss */
+  /* line 69, ../scss/_custom.scss */
   .intro {
     padding: 10%;
   }
 }
-/* line 77, ../scss/_custom.scss */
-.intro img {
+/* line 80, ../scss/_custom.scss */
+.intro .face {
   width: 25%;
   margin-left: 37%;
   margin-bottom: 10px;
 }
+@media screen and (max-width: 1024px) {
+  /* line 80, ../scss/_custom.scss */
+  .intro .face {
+    width: 30%;
+  }
+}
 @media screen and (max-width: 480px) {
-  /* line 77, ../scss/_custom.scss */
-  .intro img {
+  /* line 80, ../scss/_custom.scss */
+  .intro .face {
     width: 50%;
     margin-left: 25%;
   }
 }
-/* line 86, ../scss/_custom.scss */
-.intro h1 {
-  font-size: 3rem;
-  font-family: "brandon-grotesque";
-  text-transform: uppercase;
-  letter-spacing: 10px;
-  text-align: center;
-  color: #2B2420;
-}
-@media screen and (max-width: 1024px) {
-  /* line 86, ../scss/_custom.scss */
-  .intro h1 {
-    font-size: 1.6rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  /* line 86, ../scss/_custom.scss */
-  .intro h1 {
-    font-size: 1.5rem;
-  }
-}
-/* line 102, ../scss/_custom.scss */
+/* line 94, ../scss/_custom.scss */
 .intro p {
   color: #2B2420;
   font-family: "brandon-grotesque";
@@ -3284,12 +3269,12 @@ body {
   margin-bottom: 0px;
 }
 @media screen and (max-width: 480px) {
-  /* line 102, ../scss/_custom.scss */
+  /* line 94, ../scss/_custom.scss */
   .intro p {
     font-size: 1rem;
   }
 }
-/* line 112, ../scss/_custom.scss */
+/* line 104, ../scss/_custom.scss */
 .intro p.sub {
   font-size: 1.125rem;
   font-style: italic;
@@ -3298,22 +3283,22 @@ body {
   line-height: 80%;
 }
 @media screen and (max-width: 480px) {
-  /* line 112, ../scss/_custom.scss */
+  /* line 104, ../scss/_custom.scss */
   .intro p.sub {
     font-size: 0.75rem;
   }
 }
-/* line 122, ../scss/_custom.scss */
+/* line 114, ../scss/_custom.scss */
 .intro .story {
   color: #2B2420;
   float: left;
   font-size: 1.125rem;
   font-family: "brandon-grotesque";
-  text-align: center;
+  text-align: justify;
   font-style: italic;
   margin-top: 30px;
 }
-/* line 131, ../scss/_custom.scss */
+/* line 123, ../scss/_custom.scss */
 .intro .divider {
   height: 3px;
   background-color: #FF8282;
@@ -3322,44 +3307,73 @@ body {
   float: left;
   margin-left: 45%;
 }
-/* line 139, ../scss/_custom.scss */
+/* line 131, ../scss/_custom.scss */
 .intro ul {
   float: left;
-  margin-top: 30px;
+  margin-top: 40px;
   margin-left: 20%;
-  width: 50%;
+  width: 100%;
 }
 @media screen and (max-width: 1024px) {
-  /* line 139, ../scss/_custom.scss */
+  /* line 131, ../scss/_custom.scss */
   .intro ul {
-    margin-left: 25%;
+    margin-left: 28%;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 139, ../scss/_custom.scss */
+  /* line 131, ../scss/_custom.scss */
   .intro ul {
+    margin-left: 21%;
     width: 100%;
-    margin-left: 0%;
   }
 }
-/* line 152, ../scss/_custom.scss */
+/* line 144, ../scss/_custom.scss */
 .intro li {
   float: left;
-  width: 15%;
-  margin-left: 10%;
+  width: 10%;
+  margin-right: 5%;
 }
 @media screen and (max-width: 1024px) {
-  /* line 152, ../scss/_custom.scss */
+  /* line 144, ../scss/_custom.scss */
+  .intro li {
+    width: 7%;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 144, ../scss/_custom.scss */
   .intro li {
     width: 10%;
   }
 }
-/* line 159, ../scss/_custom.scss */
+/* line 154, ../scss/_custom.scss */
 .intro li img {
   width: 100%;
 }
 
-/* line 170, ../scss/_custom.scss */
+/* line 160, ../scss/_custom.scss */
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  font-family: "brandon-grotesque";
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  text-align: center;
+  color: #2B2420;
+}
+@media screen and (max-width: 1024px) {
+  /* line 160, ../scss/_custom.scss */
+  h1 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 160, ../scss/_custom.scss */
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+/* line 180, ../scss/_custom.scss */
 h2 {
   font-size: 2.3125rem;
   margin-top: 50px;
@@ -3370,13 +3384,13 @@ h2 {
   color: #2B2420;
 }
 @media screen and (max-width: 480px) {
-  /* line 170, ../scss/_custom.scss */
+  /* line 180, ../scss/_custom.scss */
   h2 {
     font-size: 1.5rem;
   }
 }
 
-/* line 186, ../scss/_custom.scss */
+/* line 196, ../scss/_custom.scss */
 .divider {
   height: 3px;
   background-color: #FF8282;
@@ -3386,14 +3400,15 @@ h2 {
   margin-left: 45%;
 }
 
-/* line 198, ../scss/_custom.scss */
+/* line 208, ../scss/_custom.scss */
 ul.tags {
   margin-top: 60px;
+  margin-bottom: 60px;
   float: left;
   color: #806A59;
   font-family: "brandon-grotesque";
 }
-/* line 203, ../scss/_custom.scss */
+/* line 214, ../scss/_custom.scss */
 ul.tags li {
   margin-bottom: 15px;
   float: left;
@@ -3401,47 +3416,46 @@ ul.tags li {
   border: solid 2px #806A59;
   border-radius: 15px;
   font-size: 1.125rem;
-  margin-right: 10px;
+  margin-right: 20px;
 }
 @media screen and (max-width: 480px) {
-  /* line 203, ../scss/_custom.scss */
+  /* line 214, ../scss/_custom.scss */
   ul.tags li {
     padding: 1px 10px 4px 10px;
     font-size: 1rem;
   }
 }
 
-/* line 220, ../scss/_custom.scss */
+/* line 231, ../scss/_custom.scss */
 .skills {
-  background-image: url("img/pop_back_10.png");
+  background-image: url("img/pop_back_10_ext.png");
   background-attachment: fixed;
   background-repeat: repeat-x;
   background-size: 10%;
   background-color: #A6BCBF;
-  background-position: 0% 15%;
   height: auto;
   padding-bottom: 10%;
   zoom: 1;
 }
 @media screen and (max-width: 1024px) {
-  /* line 220, ../scss/_custom.scss */
+  /* line 231, ../scss/_custom.scss */
   .skills {
     background-size: 10%;
   }
 }
 
-/* line 239, ../scss/_custom.scss */
+/* line 250, ../scss/_custom.scss */
 .work-section {
   width: 100%;
   z-index: 100;
-  margin-top: 50px;
 }
-/* line 247, ../scss/_custom.scss */
+/* line 258, ../scss/_custom.scss */
 .work-section ul {
   float: left;
   width: 100%;
+  margin: 0;
 }
-/* line 250, ../scss/_custom.scss */
+/* line 262, ../scss/_custom.scss */
 .work-section ul li {
   width: 25%;
   float: left;
@@ -3453,98 +3467,98 @@ ul.tags li {
   transition: ease-in-out;
 }
 @media screen and (max-width: 1024px) {
-  /* line 250, ../scss/_custom.scss */
+  /* line 262, ../scss/_custom.scss */
   .work-section ul li {
     width: 50%;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 250, ../scss/_custom.scss */
+  /* line 262, ../scss/_custom.scss */
   .work-section ul li {
     width: 100%;
     padding-top: 14%;
   }
 }
-/* line 266, ../scss/_custom.scss */
+/* line 278, ../scss/_custom.scss */
 .work-section ul li:nth-child(1) {
   background-color: #e1e9ea;
 }
 @media screen and (max-width: 1024px) {
-  /* line 266, ../scss/_custom.scss */
+  /* line 278, ../scss/_custom.scss */
   .work-section ul li:nth-child(1) {
     background-color: #d3dedf;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 266, ../scss/_custom.scss */
+  /* line 278, ../scss/_custom.scss */
   .work-section ul li:nth-child(1) {
     background-color: #e1e9ea;
   }
 }
-/* line 274, ../scss/_custom.scss */
+/* line 286, ../scss/_custom.scss */
 .work-section ul li:nth-child(1):hover h3 {
   display: block;
 }
-/* line 278, ../scss/_custom.scss */
+/* line 290, ../scss/_custom.scss */
 .work-section ul li:nth-child(2) {
   background-color: #d3dedf;
 }
 @media screen and (max-width: 1024px) {
-  /* line 278, ../scss/_custom.scss */
+  /* line 290, ../scss/_custom.scss */
   .work-section ul li:nth-child(2) {
     background-color: #e1e9ea;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 278, ../scss/_custom.scss */
+  /* line 290, ../scss/_custom.scss */
   .work-section ul li:nth-child(2) {
     background-color: #d3dedf;
   }
 }
-/* line 286, ../scss/_custom.scss */
+/* line 298, ../scss/_custom.scss */
 .work-section ul li:nth-child(2):hover h3 {
   display: block;
 }
-/* line 290, ../scss/_custom.scss */
+/* line 302, ../scss/_custom.scss */
 .work-section ul li:nth-child(3) {
   background-color: #e1e9ea;
 }
 @media screen and (max-width: 1024px) {
-  /* line 290, ../scss/_custom.scss */
+  /* line 302, ../scss/_custom.scss */
   .work-section ul li:nth-child(3) {
     background-color: #e1e9ea;
   }
 }
-/* line 295, ../scss/_custom.scss */
+/* line 307, ../scss/_custom.scss */
 .work-section ul li:nth-child(3):hover h3 {
   display: block;
 }
-/* line 299, ../scss/_custom.scss */
+/* line 311, ../scss/_custom.scss */
 .work-section ul li:nth-child(4) {
   background-color: #d3dedf;
 }
-/* line 301, ../scss/_custom.scss */
+/* line 313, ../scss/_custom.scss */
 .work-section ul li:nth-child(4):hover h3 {
   display: block;
 }
 @media screen and (max-width: 480px) {
-  /* line 299, ../scss/_custom.scss */
+  /* line 311, ../scss/_custom.scss */
   .work-section ul li:nth-child(4) {
     padding-top: 8%;
   }
 }
-/* line 307, ../scss/_custom.scss */
+/* line 319, ../scss/_custom.scss */
 .work-section ul li:nth-child(4) img {
   width: 40%;
   margin-left: 31%;
 }
-/* line 312, ../scss/_custom.scss */
+/* line 324, ../scss/_custom.scss */
 .work-section ul li img {
   width: 60%;
   margin-left: 20%;
 }
 
-/* line 322, ../scss/_custom.scss */
+/* line 334, ../scss/_custom.scss */
 .work-section a:hover img {
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
@@ -3555,7 +3569,7 @@ ul.tags li {
   margin-top: 25px;
 }
 
-/* line 334, ../scss/_custom.scss */
+/* line 346, ../scss/_custom.scss */
 .work-section a:hover {
   text-decoration: none;
   -webkit-transition: all 0.25s ease-in-out;
@@ -3565,7 +3579,7 @@ ul.tags li {
   transition: all 0.25s ease-in-out;
 }
 
-/* line 345, ../scss/_custom.scss */
+/* line 357, ../scss/_custom.scss */
 h3 {
   z-index: 10;
   text-align: center;
@@ -3581,35 +3595,141 @@ h3 {
   letter-spacing: 2px;
 }
 @media screen and (max-width: 1024px) {
-  /* line 345, ../scss/_custom.scss */
+  /* line 357, ../scss/_custom.scss */
   h3 {
     margin-left: 1%;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 345, ../scss/_custom.scss */
+  /* line 357, ../scss/_custom.scss */
   h3 {
     margin-left: 25%;
   }
 }
 
-/* line 370, ../scss/_custom.scss */
+/* line 382, ../scss/_custom.scss */
 footer {
   background-color: #FCF3CF;
   font-family: "brandon-grotesque";
   text-transform: uppercase;
   letter-spacing: 5px;
-  padding-bottom: 15px;
+  height: 125px;
+  clear: both;
+  padding-top: 5px;
 }
-/* line 376, ../scss/_custom.scss */
+/* line 390, ../scss/_custom.scss */
 footer p {
   text-align: center;
+  margin-top: 50px;
   color: #2B2420;
   font-size: 1.125rem;
 }
 @media screen and (max-width: 480px) {
-  /* line 376, ../scss/_custom.scss */
+  /* line 390, ../scss/_custom.scss */
   footer p {
     font-size: 0.875rem;
   }
+}
+
+/* line 403, ../scss/_custom.scss */
+.work-intro {
+  background-color: #e1e9ea;
+  width: 100%;
+  padding-bottom: 50px;
+  margin-top: 0px;
+  font-family: "brandon-grotesque";
+}
+/* line 409, ../scss/_custom.scss */
+.work-intro button {
+  margin-top: 50px;
+  padding: 0px 20px 5px 20px;
+  font-family: "brandon-grotesque";
+  text-transform: uppercase;
+  font-weight: 900;
+  background-color: transparent;
+  color: #2B2420;
+  border: solid 2px #2B2420;
+  letter-spacing: 2px;
+  float: left;
+}
+@media screen and (max-width: 480px) {
+  /* line 409, ../scss/_custom.scss */
+  .work-intro button {
+    padding: 0px 6px 2px 5px;
+    font-size: 0.625rem;
+    margin-bottom: 25px;
+  }
+}
+/* line 425, ../scss/_custom.scss */
+.work-intro button span {
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 480px) {
+  /* line 425, ../scss/_custom.scss */
+  .work-intro button span {
+    font-size: 0.9375rem;
+  }
+}
+
+/* line 435, ../scss/_custom.scss */
+.desc {
+  margin: 0px 0px 50px 0px;
+  font-family: "brandon-grotesque";
+  font-size: 1.125rem;
+  color: #806A59;
+  text-align: justify;
+  padding: 50px 0px 50px 0px;
+  border-bottom: solid 1px #dad1cb;
+}
+
+/* line 446, ../scss/_custom.scss */
+section img {
+  float: left;
+  margin-left: 5%;
+  width: 90%;
+  margin-bottom: 50px;
+}
+
+/* line 453, ../scss/_custom.scss */
+section .tasks ul {
+  margin: 0px;
+}
+
+/* line 457, ../scss/_custom.scss */
+section .tasks {
+  margin-left: 11%;
+}
+
+/* line 461, ../scss/_custom.scss */
+.tasks {
+  height: 50px;
+  margin-left: 125px;
+  font-family: "brandon-grotesque";
+  font-size: 1.5rem;
+  color: #2B2420;
+}
+@media screen and (max-width: 480px) {
+  /* line 461, ../scss/_custom.scss */
+  .tasks {
+    margin-left: 50px;
+  }
+}
+/* line 470, ../scss/_custom.scss */
+.tasks p {
+  float: left;
+}
+/* line 473, ../scss/_custom.scss */
+.tasks span {
+  float: left;
+}
+
+/* line 478, ../scss/_custom.scss */
+.tasks-sec {
+  border-top: solid 1px #dad1cb;
+  border-bottom: solid 1px #dad1cb;
+}
+
+/* line 485, ../scss/_custom.scss */
+section {
+  margin-bottom: 75px;
 }
